@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cbb0aad349.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="js/app.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Jose Silva Portfolio</title>
+  </head>
+
+  <body id="bootstrap-overrides">
+    <div class="header">
+      <div class="flex-container-header">
+        <div class="content-right">
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <nav>
+            <ul
+              id="primary-navigation"
+              class="primary-navigation flex"
+              data-visible="false"
+            >
+              <li class="active">
+                <a href="#home" class="nav-item"> Home </a>
+              </li>
+              <li>
+                <a href="#aboutMe" class="nav-item"> About Me </a>
+              </li>
+              <li>
+                <a href="#projects" class="nav-item"> Projects </a>
+              </li>
+              <li>
+                <a href="#abilities" class="nav-item"> Abilities </a>
+              </li>
+              <li>
+                <a href="#contactMe" class="nav-item"> Contact Me </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container-fluid vh-100">
+        <div class="row h-100">
+          <div
+            class="col-lg-12 col-xs-7 d-flex align-items-center justify-content-center p-0"
+          >
+            <div id="home" class="first-content hidden">
+              <h3>Hello,</h3>
+              <h1>I'm Jose Silva.</h1>
+              <h2>
+                A brazilian full stack developer and data analyst located in
+                Moncton, Canada.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row h-75 d-flex justify-content-around">
+          <div
+            class="col-lg-5 col-xs-7 p-y-5 d-flex gap-5 flex-column align-items-center justify-content-center"
+          >
+            <div>
+              <h1 class="center">About me</h1>
+            </div>
+
+            <div
+              class="column d-flex flex-column justify-content-space-between align-items-center"
+            >
+              <div class="about-me list hidden left-animated w-75">
+                <p>
+                  Early in my life, I have shown interest in natural science,
+                  leading me to achieve a bachelors degree in Physics. After
+                  teaching for a few years in Brazil I realized that the
+                  classroom didn't fit my needs, therefore I pursued a career
+                  change, coming to Canada to study web development at New
+                  Brunswick Community College.
+                </p>
+
+                <p>
+                  Now I develop dynamic and responsive websites, solving complex
+                  problems to ensure a well functional website.
+                </p>
+                <p>
+                  Whenever I am not coding, I enjoy riding a bike or going for a
+                  rike. I'm also a sports enthusiast, currently working on some
+                  calisthenics movements.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xs-5 p-5 d-flex align-items-center">
+            <div
+              class="h-50 d-flex justify-content-center align-items-center professional_pic"
+            >
+              <img
+                src="/img/professional-photo.jpg"
+                class="list hidden left-animated img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="web_projects" class="third-content hidden">
+        <div class="content-title">
+          <h1>Data Analyst Projects</h1>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <h2 class="center">Birth by Age of Parents NS Projecti</h2>
+            <div class="card-body">
+              <div class="overlap-container">
+                <div class="project-images">
+                  <img
+                    class="bottom-image"
+                    src="/img/Mother_Distribution.png"
+                  />
+                  <img
+                    class="top-image"
+                    src="/img/Mother_Count_by_Father_Age.png"
+                  />
+                </div>
+                <div class="project-description">
+                  <p>
+                    Also known as the last project for school, this modern
+                    restaurant's website is able to recieve and confirm
+                    reservations, where the administrator is even able to choose
+                    which table will have each table at the restaurant's
+                    floorplan.
+                  </p>
+                  <p>
+                    He can also create and feature new menus. All combined with
+                    a good looking desing to provide a pleasurable UX.
+                  </p>
+                </div>
+              </div>
+
+              <h3>Tech used:</h3>
+              <ul>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Spring Data JPA</li>
+                <li>Thymeleaf</li>
+                <li>Oracle Database</li>
+                <li>HTML 5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-action">
+                <a class="button-primary" href="https://www.google.com/"
+                  >Check Project</a
+                >
+                <a class="git-link" href="https://www.google.com/">
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="center">Bullseye Inventory Management System</h2>
+              <div class="project-images">
+                <img class="bottom-image" src="/img/BULLSEYE_ADD_ORDER.png" />
+                <img
+                  class="top-image"
+                  src="/img/BULLSEYE_INVENTORY_PAGE.png"
+                />
+              </div>
+              <p>
+                An application capable of managing a wharehouse. The user can
+                check the current inventory, generate orders and check the
+                shipping for each order. Every relevant action generates an
+                automatic report.
+              </p>
+              <h3>Tech used:</h3>
+              <ul>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Spring Data JPA</li>
+                <li>Thymeleaf</li>
+                <li>H2 Database</li>
+                <li>HTML 5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-action">
+                <a class="button-primary" href="https://www.google.com/"
+                  >Check Project</a
+                >
+                <a class="git-link" href="https://www.google.com/">
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="center">Truco Project</h2>
+              <div class="project-images">
+                <img
+                  class="bottom-image"
+                  src="/img/RESTO_APP_FRONT_PAGE.png"
+                />
+                <img class="top-image" src="/img/RESTO_APP_ADMIN_PAGE.png" />
+              </div>
+              <p>
+                To complete an OOP course I developed a popular brasilian card
+                game called Truco.
+              </p>
+              <p>
+                Two teams play Truco. The goal is to reach 12 points first.
+                Whoever achieves it, wins!
+              </p>
+              <h3>Tech used:</h3>
+              <ul>
+                <li>C#</li>
+                <li>.Net</li>
+                <li>SQL</li>
+              </ul>
+              <div class="project-action">
+                <a class="git-link" href="https://www.google.com/">
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="web_projects" class="third-content hidden">
+        <div class="content-title">
+          <h1>Web Development Projects</h1>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="center">NBCC Room 1234 WebPortal</h2>
+              <div class="overlap-container">
+                <div class="project-images">
+                  <img
+                    class="bottom-image"
+                    src="/img/RESTO_APP_FRONT_PAGE.png"
+                  />
+                  <img
+                    class="top-image"
+                    src="/img/RESTO_APP_ADMIN_PAGE.png"
+                  />
+                </div>
+                <div class="project-description">
+                  <p>
+                    Also known as the last project for school, this modern
+                    restaurant's website is able to recieve and confirm
+                    reservations, where the administrator is even able to choose
+                    which table will have each table at the restaurant's
+                    floorplan.
+                  </p>
+                  <p>
+                    He can also create and feature new menus. All combined with
+                    a good looking desing to provide a pleasurable UX.
+                  </p>
+                </div>
+              </div>
+
+              <h3>Tech used:</h3>
+              <ul>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Spring Data JPA</li>
+                <li>Thymeleaf</li>
+                <li>Oracle Database</li>
+                <li>HTML 5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-action">
+                <a class="button-primary" href="https://www.google.com/"
+                  >Check Project</a
+                >
+                <a class="git-link" href="https://www.google.com/">
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="center">Bullseye Inventory Management System</h2>
+              <div class="project-images">
+                <img class="bottom-image" src="/img/BULLSEYE_ADD_ORDER.png" />
+                <img
+                  class="top-image"
+                  src="/img/BULLSEYE_INVENTORY_PAGE.png"
+                />
+              </div>
+              <p>
+                An application capable of managing a wharehouse. The user can
+                check the current inventory, generate orders and check the
+                shipping for each order. Every relevant action generates an
+                automatic report.
+              </p>
+              <h3>Tech used:</h3>
+              <ul>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Spring Data JPA</li>
+                <li>Thymeleaf</li>
+                <li>H2 Database</li>
+                <li>HTML 5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-action">
+                <a class="button-primary" href="https://www.google.com/"
+                  >Check Project</a
+                >
+                <a class="git-link" href="https://www.google.com/">
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="center">Truco Project</h2>
+              <div class="project-images">
+                <img
+                  class="bottom-image"
+                  src="/img/RESTO_APP_FRONT_PAGE.png"
+                />
+                <img class="top-image" src="/img/RESTO_APP_ADMIN_PAGE.png" />
+              </div>
+              <p>
+                To complete an OOP course I developed a popular brasilian card
+                game called Truco.
+              </p>
+              <p>
+                Two teams play Truco. The goal is to reach 12 points first.
+                Whoever achieves it, wins!
+              </p>
+              <h3>Tech used:</h3>
+              <ul>
+                <li>C#</li>
+                <li>.Net</li>
+                <li>SQL</li>
+              </ul>
+              <div class="project-action">
+                <a class="git-link" href="https://www.google.com/">
+                  <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills" class="fourth-content hidden">
+        <h1 class="center">Skills</h1>
+
+        <div class="skill-panel">
+          <div class="skills-display">
+            <div class="skill-image" id="java">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="skill-image" id="cSharp">
+              <div class="image-icon">
+                <img src="/img/csharp.png" />
+              </div>
+            </div>
+            <div class="skill-image" id="database">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="skill-image" id="html">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-image" id="css">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="skill-image" id="javaScript">
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+            <div class="skill-image" id="github">
+              <i class="fa-brands fa-square-github"></i>
+            </div>
+            <div class="skill-image" id="teamplayer">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div class="skill-image" id="communication">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+          </div>
+          <div class="skills-description-container">
+            <div
+              class="skill-description show-description"
+              id="defaultDescription"
+            >
+              <h1 class="center">Hover a skill to see a description.</h1>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="javaDescription"
+            >
+              <h1 class="center">Java</h1>
+              <div class="description-body">
+                <h3>
+                  I was presented to Java during my college degree, focusing on
+                  developing object oriented applications.
+                </h3>
+                <h3>
+                  At the end of the program I started my journey with Spring
+                  Boot, implementing complex applications such a restaurant web
+                  portal and an Inventory Management System.
+                </h3>
+              </div>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="cSharpDescription"
+            >
+              <h1 class="center">C#</h1>
+              <div class="description-body">
+                <h3>
+                  The first language teached in college has a special place on
+                  my heart, in my case, that's C#.
+                </h3>
+                <h3>
+                  At first we were focused on creating desktop forms to
+                  understand more complex OOP concepts. Nowadays I am able to
+                  create dynamic websites using .Net framework such as a
+                  library's system.
+                </h3>
+              </div>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="databaseDescription"
+            >
+              <h1 class="center">Databases</h1>
+              <div class="description-body">
+                <h3>
+                  Static websites can be pretty nice, but it can get a bit
+                  boring after some time.
+                </h3>
+                <h3>
+                  During college I was presented to different databases, such as
+                  SQL, MySQL, Oracle, H2; enabling me to develop CRUD
+                  applications. I am also able to write complex SQL commands.
+                </h3>
+              </div>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="htmlDescription"
+            >
+              <h1 class="center">HTML 5</h1>
+              <div class="description-body">
+                <h3>
+                  My studies were focused on web development, ensuring that I
+                  had a solid understand of the basics of web development.
+                </h3>
+                <h3>
+                  That being said, I am able to create modern looking and
+                  funcional dynamic websites, dealing with data from the user
+                  side and displaying data from the database. All of that
+                  combined with HTTP methods to create CRUD applications.
+                </h3>
+              </div>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="cssDescription"
+            >
+              <h1 class="center">CSS 3</h1>
+              <div class="description-body">
+                <h3>Even though I am not a designer, I love CSS.</h3>
+                <h3>
+                  The possibility to create a website the way you want is
+                  liberating. Specially on modern days, where you can easily
+                  make use of flexboxes and grid templates to make responsive
+                  and good looking websites (like this one, obviously).
+                </h3>
+              </div>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="javaScriptDescription"
+            >
+              <h1 class="center">JavaScript</h1>
+              <div class="description-body">
+                <h3>
+                  To make sure my websites has some cool features, I always
+                  apply some JavaScript to enhance the user experience.
+                </h3>
+              </div>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="githubDescription"
+            >
+              <h1 class="center">GitHub</h1>
+              <div class="description-body">
+                <h3>
+                  To develop better software it is important to work along with
+                  different people.
+                </h3>
+                <h3>
+                  To do that, I've been using group reppositories on GitHub to
+                  develop my last projects, working along with my sister.
+                  Toghether we were able to solve merge conflicts and deploy
+                  useful software.
+                </h3>
+              </div>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="teamplayerDescription"
+            >
+              <h1 class="center">Team Player</h1>
+              <div class="description-body">
+                <h3>
+                  Even though I am young, I've been working for more than 7
+                  years in different areas.
+                </h3>
+                <h3>
+                  Although I've experience in unrelated fields, there is one
+                  habit that I followed in all my past jobs. I was always a team
+                  player, making sure to be a part of an enjoyable environment
+                  while providing my skills to help the team.
+                </h3>
+              </div>
+            </div>
+            <div
+              class="skill-description hidden-description"
+              id="communicationDescription"
+            >
+              <h1 class="center">Communication</h1>
+              <div class="description-body">
+                <h3>
+                  After more than 7 years seeking for higher education, I've
+                  master the ability to express my thoughts in two different
+                  languages, English and Portuguese.
+                </h3>
+                <h3>
+                  To be a successfull learner, you have to not be afraid of
+                  asking questions and seek for help. Therefore, I matured my
+                  abilities to ask questions and
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div>
+        
+      </div>        
+      <div class="contact-options">
+        <div class="contact-option">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>zekaaccarlos@gmail.com</h3>
+        </div>
+        <div class="contact-option">
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div> -->
+      
+    </main>
+    <footer>
+      
+      <div id="contact-me" class="contact-me">
+        <div class="w-50 center d-flex flex-column justify-content-around">
+          <h1 >Contact me</h1>
+
+          <p>Still here? Thanks for giving a look at my most recent work. If it is of any interest to contact me, feel free to reach to me in any of the following options.</p>
+        </div>
+        <div class="w-50">
+          <h1>
+            Content 2
+          </h1>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
