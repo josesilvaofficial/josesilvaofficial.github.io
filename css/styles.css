@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f8f6f0;
+  background-color: #f8f9fa;
   font-family: "Noto Sans TC", sans-serif;
   box-sizing: border-box;
   cursor: default;
@@ -78,6 +78,14 @@ a {
 
 a {
   color: #000;
+}
+
+footer a:hover{
+  color: #f8f9fa  ;
+}
+
+.project-action a:hover{
+  color: black;
 }
 
 li a {
@@ -182,22 +190,26 @@ img {
 
 .contact-me{
     width: 80%;    
-    height: 25vh;
+    /* height: 25vh; */
     margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
 
 .contact-options{
+  padding-top: 10px;
+  padding-bottom: 10px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center;
+    gap: 1rem;
 }
 
 .contact-option{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 2rem ;
 }
 
 .contact-option i{
@@ -314,7 +326,11 @@ img {
 }
 
 .top-image {
-  animation: fadeTopImage 8s infinite ease-in-out alternate;
+  animation: fadeTopImage 5s infinite ease-in-out alternate;
+}
+
+.contactLink{
+  color: #f8f9fa;
 }
 
 @keyframes fadeTopImage {
@@ -335,13 +351,12 @@ img {
   }
 }
 
-.fourth-content {
+.fourth-content {  
   width: 80%;
   margin: auto;
-  height: 100vh;
-  display: grid;
-  /* align-items: center; */
-  /* justify-items: center; */
+  height: 85vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .skill-panel {
@@ -408,9 +423,17 @@ img {
 }
 
 footer{
-  background-color: #050100;
-  color: #c5c6d0;
+  background-color: #212529;
+  color: #f8f9fa;
 }
+
+
+.copyright{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
 
 @media (max-width: 59.375rem) {
   .header {
@@ -488,7 +511,7 @@ footer{
   .skill-panel {
     display: grid;
     grid-template-columns: none;
-    grid-template-rows: 30vh 30vh;
+    grid-template-rows: 30vh 45vh;
     gap: 5rem;
   }
 
@@ -498,5 +521,10 @@ footer{
 
   .third-content{
     padding-bottom: none;
+  }
+
+  .fourth-content{
+    width: 100%;
+    height: fit-content;
   }
 }

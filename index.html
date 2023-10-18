@@ -51,7 +51,7 @@
                 <a href="#projects" class="nav-item"> Projects </a>
               </li>
               <li>
-                <a href="#abilities" class="nav-item"> Abilities </a>
+                <a href="#skills" class="nav-item"> Skills </a>
               </li>
               <li>
                 <a href="#contactMe" class="nav-item"> Contact Me </a>
@@ -62,12 +62,12 @@
       </div>
     </div>
     <main>
-      <div class="container-fluid vh-100">
+      <div id="home" class="container-fluid vh-100">
         <div class="row h-100">
           <div
             class="col-lg-12 col-xs-7 d-flex align-items-center justify-content-center p-0"
           >
-            <div id="home" class="first-content hidden">
+            <div class="first-content hidden">
               <h3>Hello,</h3>
               <h1>I'm Jose Silva.</h1>
               <h2>
@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div class="container-fluid">
+      <div id="aboutMe" class="container-fluid" >
         <div class="row h-75 d-flex justify-content-around">
           <div
             class="col-lg-5 col-xs-7 p-y-5 d-flex gap-5 flex-column align-items-center justify-content-center"
@@ -127,7 +127,7 @@
         </div>
       </div>
 
-      <div id="web_projects" class="third-content hidden">
+      <div id="projects" class="third-content hidden">
         <div class="content-title">
           <h1>Data Analyst Projects</h1>
         </div>
@@ -421,7 +421,7 @@
               class="skill-description show-description"
               id="defaultDescription"
             >
-              <h1 class="center">Hover a skill to see a description.</h1>
+              <h1 class="center">Hover or Click a skill to see a description.</h1>
             </div>
             <div
               class="skill-description hidden-description"
@@ -591,22 +591,35 @@
           <i class="fa-brands fa-linkedin"></i>
         </div>
       </div> -->
-      
     </main>
-    <footer>
-      
-      <div id="contact-me" class="contact-me">
+    <footer>      
+      <div id="contactMe" class="contact-me">
         <div class="w-50 center d-flex flex-column justify-content-around">
-          <h1 >Contact me</h1>
-
-          <p>Still here? Thanks for giving a look at my most recent work. If it is of any interest to contact me, feel free to reach to me in any of the following options.</p>
+          <h1>Contact me</h1>
         </div>
         <div class="w-50">
-          <h1>
-            Content 2
-          </h1>
-        </div>
+          <div class="contact-options">
+            <div class="contact-option">
+              <a class="contactLink" href=mailto:"zekaaccarlos@gmail.com?subject=Contact%20From%20Portfolio%20">
+                <i class="fa-solid fa-envelope"></i>
+              </a>              
+              <h4>zekaaccarlos@gmail.com</h4>
+            </div>
+            <div class="contact-option">
+              <a class="contactLink" href="https://www.linkedin.com/in/jose-silva-b45954224/">
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+              <h4>Jose Silva</h4>
+            </div>
+            <div class="contact-option">
+              <i class="fa-solid fa-phone"></i> <h4>+1 (506) 899 - 2875</h4>
+            </div>
+          </div>
+        </div>              
       </div>
+      <div class="copyright"> 
+        <i class="fa-regular fa-copyright"></i> Jose Silva Developments 
+      </div>  
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
