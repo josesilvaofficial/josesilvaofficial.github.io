@@ -197,7 +197,7 @@ img {
 }
 
 .contact-options{
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -213,8 +213,21 @@ img {
 }
 
 .contact-option i{
-    font-size: 3rem;
+    font-size: 2.5rem;
 
+}
+
+.contactMeTitle{
+  display: flex;
+  align-items: center;
+}
+
+.contactLink{
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .card-container {
@@ -354,7 +367,7 @@ img {
 .fourth-content {  
   width: 80%;
   margin: auto;
-  height: 85vh;
+  /* height: 85vh; */
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
@@ -527,4 +540,23 @@ footer{
     width: 100%;
     height: fit-content;
   }
+
+  .contact-me{
+    flex-direction: column;
+    
+  }
+
+  .contactMeTitle{
+    padding-top: 1rem;
+    justify-content: center;
+  }
+
+  .contact-option{
+    white-space: nowrap;
+  }
+
+  .contact-option i{
+    font-size: 30px;
+  }
+
 }

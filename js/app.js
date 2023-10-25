@@ -56,3 +56,17 @@ navToggle.addEventListener('click', () =>{
     }
     
 });
+
+// Close Navigation if navigate to another page
+
+const navList = document.querySelectorAll('.nav-item')
+
+
+for ( var i = 0; i < navList.length; i++ ) {
+    navList[i].addEventListener( 'click', (e) => {
+        const visibility = primaryNav.getAttribute("data-visible");
+        if(visibility === "true"){
+            primaryNav.setAttribute('data-visible', false);
+            }
+    })
+}
