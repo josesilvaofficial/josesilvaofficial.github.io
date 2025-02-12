@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cbb0aad349.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="js/app.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Jose Silva Portfolio</title>
+  </head>
+
+  <body id="bootstrap-overrides">
+    <div class="header">
+      <div class="flex-container-header">
+        <div class="content-right">
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <nav>
+            <ul
+              id="primary-navigation"
+              class="primary-navigation flex"
+              data-visible="false"
+            >
+              <li class="active">
+                <a href="index.html" class="nav-item"> Home </a>
+              </li>
+              <li>
+                <a href="index.html" class="nav-item"> About Me </a>
+              </li>
+              <li>
+                <a href="index.html" class="nav-item"> Projects </a>
+              </li>
+              <li>
+                <a href="index.html" class="nav-item"> Skills </a>
+              </li>
+              <li>
+                <a href="index.html" class="nav-item"> Contact Me </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1>Financial Record Project</h1>
+
+          <p>
+            In this project I'll go deep into my finances since I came to
+            Canada, starting with my first statement, trying to understand a bit
+            better my expenses habits and to prove my abilities as a data
+            analist.
+          </p>
+          <p>
+            In here we are going to explore all the 6 phases of the data analysis
+            life cycle, going deeply into each one of them.
+          </p>
+
+          <h4>Step #1 - Ask</h4>
+          <p>
+            To better understand the problem we want to solve in this project I've got
+            a few questions, such as follows:
+          </p>
+
+          <ul>
+            <li>What were my key expenses from August 2021 to October 2023?</li>
+            <li>How much has my revenue increased since my first job as a supervisor in a fast food to becoming a bartender?</li>
+            <li></li>
+          </ul>
+
+          <p>
+            To answer these questions I've got to get access of my e-estatements from my online banking, but this is another step 
+            of the data analysis life cycle called prepare.
+          </p>
+
+          <h4>Step #2 - Prepare</h4>
+          <p>
+            This phase of the analysis is responsible to but not restricted to aquiring the data we are going to work with. 
+            I've got the records for my bank account from 08/23/2021 to 10/23/2023, computing a total of 27 records altogether. 
+          </p>
+
+          <h5>Milestone Hit</h5>
+          <p>
+            The e-Statement files were in pdf format and the first idea I had to convert it to usable data was to read the PDF
+            files in python using the tabula library, however, it wasn't able to read all the pages from the e-Statements.             
+          </p>
+          <p>
+            After deciding to ask chat-gpt how to solve this problem, I used an online pdf converter to xlsx, which revealled to be
+            a much easier way of accomplishing this task. 
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col big-box center">
+                <p>Changing the e-Statement file from this:</p>
+                <img  src="/img/financial_statement.png"/>
+              </div>
+          
+              <div class="col big-box center">
+                <p>To this:</p>
+                <img src="/img/financial_excel_statement.png" />
+              </div>
+          
+            </div>
+          </div>
+
+          <p class="m-t-1">
+            Even though this was a lot of help, I still have to clean all this data. To clean the data, I'll use Pandas
+            data frames, which provide me a great liberty to remove undesirable rows.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+        
+      </div>
+      
+      
+    </main>
+    <footer>
+      <div id="contactMe" class="contact-me">
+        <div class="contactMeTitle">
+          <h1 class="center">Contact me</h1>
+        </div>
+
+        <div class="contact-options">
+          <div class="contact-option">
+            <a
+              class="contactLink"
+              href="mailto:zekaaccarlos@gmail.com?subject"
+              ="Contact%20From%20Portfolio%20"
+            >
+              <i class="fa-solid fa-envelope"></i>
+
+              <div>zekaaccarlos@gmail.com</div>
+            </a>
+          </div>
+          <div class="contact-option">
+            <a
+              class="contactLink"
+              href="https://www.linkedin.com/in/jose-silva-b45954224/"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              <div>Jose Silva</div>
+            </a>
+          </div>
+          <div class="contact-option">
+            <i class="fa-solid fa-phone"></i>
+            <h4>+1 (506) 899 - 2875</h4>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <i class="fa-regular fa-copyright"></i> Jose Silva Developments
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
